@@ -1,0 +1,46 @@
+<html>
+<head>
+    <meta charset=utf-8>
+    <title></title>
+    <style>
+        ul li {color: red}
+        .emphasis {color: green}
+    </style>
+    
+    
+    
+
+
+</head>
+<body>
+
+    <div class="container">
+
+        <h1>Welcome</h1>
+        <p>
+            test text foramat on test project of j-query
+        </p>
+    </div>
+
+    <ul class="emphasis">
+        <li>hello1</li>
+        <li>hello2</li>
+        <li>hello3</li>
+        <li>hello4</li>
+        <li>
+            <ul>
+                <li>ansector</li>
+            </ul>
+        </li>
+    </ul>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.js"></script>
+    <script>
+        // $('ul.emphasis').children('li').eq(1).text('nikl')
+        // $('ul.emphasis li:nth-child(2)').text('jquery')
+        console.log($('ul').parents('.container'));
+        console.log($('ul').closest('.container'));
+    </script>
+
+    
+</body>
+</html>
