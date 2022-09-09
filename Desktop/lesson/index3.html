@@ -18,6 +18,14 @@
     </dl>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.js"></script>
     <script>
+        (function(){
+            var dd = $('dd');
+            dd.filter(':nth-child(n+4)').addClass('hide');
+            $('dt').on('mouseenter', function(){
+                debugger;
+                $(this).next().show();
+            })
+        })();
         
     </script>
     
