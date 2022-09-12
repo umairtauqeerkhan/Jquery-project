@@ -1,0 +1,47 @@
+<html>
+<head>
+    <meta charset=utf-8>
+    <title></title>
+    <style>
+        .box {
+            width: 400px;
+            background: red;
+            
+        }
+    </style>
+    
+</head>
+<body>
+    <h1>Reveal</h1>
+    <div class="box">
+        <h1>Some Content Here</h1>
+        <p>
+            The asset pipeline offers Rails developers the opportunity to deliver CSS, JavaScript,
+            and image files to the browser more optimally. Depending on the type of file, this can be
+            through compression or a file name fingerprint. Different CSS files are combined into one
+            big file. The fingerprinting enables the browser and any proxy in between to optimally
+            cache the data so the browser can load these files more quickly on subsequent visits.
+        </p>    
+    </div>
+    <p><button>Increase</button></p>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.js"></script>
+    <script>
+        (function(){
+            var box = $('div.box');
+            $.fn.FadeSlideToggle = function(){
+                $(this).animate({
+                    'height': 'toggle',
+                    opacity: 'toggle'
+                },500);
+            };
+            $('button').on('click', function(){
+                box.FadeSlideToggle();
+            });
+        })();
+        
+        
+        
+    </script>
+    
+</body>
+</html>
